@@ -22,19 +22,27 @@ body {
   top: 0;
   left: 0;
 }
+.navbar .navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  z-index: 100;
+}
+.navbar .navbar-brand {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar .svg-img {
+  fill: black;
+}
 .navbar .navbar-nav {
   position: relative;
   z-index: 10;
   height: 110px;
 }
-.navbar .navbar-nav .navbar-brand {
-  margin: 0;
-}
-.navbar .navbar-nav .svg-img {
-  fill: black;
-}
 .navbar .navbar-nav .nav-item {
-  padding: 40px 10px;
+  padding: 30px 10px;
 }
 .navbar .navbar-nav .nav-item .dropdown {
   border: transparent;
