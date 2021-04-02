@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#fullpage {
+  height: 100vh;
+}
+
+/*  Navigation bar */
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.navbar .navbar-nav {
+  position: relative;
+  z-index: 10;
+  height: 110px;
+}
+.navbar .navbar-nav .navbar-brand {
+  margin: 0;
+}
+.navbar .navbar-nav .svg-img {
+  fill: black;
+}
+.navbar .navbar-nav .nav-item {
+  padding: 40px 10px;
+}
+.navbar .navbar-nav .nav-item .dropdown {
+  border: transparent;
+  box-shadow: none;
+}
+.navbar .navbar-nav .nav-item .dropdown .dropdown-menu {
+  border: 0px;
+}
+.navbar .navbar-nav .nav-item .dropdown .dropdown-menu .dropdown-item:hover {
+  text-decoration: underline;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: black;
+  font-size: 1.05rem;
+  font-weight: 500;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: white;
+  border: transparent;
+}
+.navbar .navbar-nav .nav-item:hover {
+  text-decoration: underline;
+}
+
+/* // wrapper section......................... */
+.owl-carousel .fp-tableCell {
+  height: 0;
+}
+.owl-carousel #hero-section {
+  position: relative;
+  background-color: white;
+  /* background-image: url(../img/bike.png);
+  background-blend-mode: saturation;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.owl-carousel #hero-section .hero-content {
+  display: table-cell;
+  height: 100vh;
+  vertical-align: middle;
+}
+.owl-carousel #hero-section .hero-content .btn-outline-dark {
+  margin-left: 10px;
+  border-radius: 0;
+  color: black;
+  font-size: 1.15rem;
+  opacity: 1;
+  text-transform: uppercase;
+}
+.owl-carousel #hero-section .hero-content .btn-outline-dark:hover {
+  background-color: black;
+  color: white;
+}
+.owl-carousel #hero-section .hero-title {
+  color: #000;
+  text-transform: uppercase !important;
+  width: 100%;
+  font-size: 4rem;
+  font-weight: bolder;
+  height: 230px;
+}
+.owl-carousel #hero-section .hero-title .welcome {
+  letter-spacing: 0.2rem;
+}
+.owl-carousel #hero-section #jacket {
+  height: 100vh;
+  width: 100%;
+}
+.owl-carousel #hero-section #jacket canvas {
+  background-color: white;
+}
+.owl-carousel #hero-section #jacket canvas:focus {
+  outline: none;
+}
+
+/* // .wrapper {
+//     z-index: -1;
+//     background-size: cover;
+//     overflow: hidden;
+//     height: 100vh;
+//     width: 100%;
+
+//     .owl-carousel {
+//         margin: 0;
+
+//         .item {
+//             height: 100vh;
+//             filter: brightness(40%);
+
+//             .owl-item-img {
+//                 height: 100vh;
+//                 width: 100%;
+//                 overflow: hidden;
+//                 background-size: cover;
+//             }
+//         }
+
+//         .owl-dots {
+//             display: none;
+//         }
+//     }
+// } */
+/* // collection section...................... */
+.collections {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  /* .fp-tableCell {
+    vertical-align: top;
+  } */
+}
+.collections .container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  height: 600px;
+  background: #fff;
+  margin: 20px;
+  left: 250px;
+}
+.collections .container .imgBx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: #212121;
+  transition: 0.3s linear;
+  right: 15px;
+}
+.collections .container .imgBx :before {
+  content: "Gorkhey";
+  position: absolute;
+  top: 0px;
+  left: 24px;
+  color: #000;
+  opacity: 0.2;
+  font-size: 6em;
+  font-weight: 800;
+}
+.collections .container .imgBx img {
+  position: relative;
+  width: 800px;
+  transform: rotate(-10deg);
+  left: -50px;
+  transition: 0.9s linear;
+}
+.collections .container .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.collections .container .details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.4em;
+  line-height: 1em;
+  color: #000;
+}
+.collections .container .details h2 span {
+  font-size: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #444;
+}
+.collections .container .details p {
+  max-width: 85%;
+  margin-left: 15%;
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+.collections .container .details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  color: #000;
+  float: left;
+}
+.collections .container .details button {
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 40px;
+  float: right;
+}
+
+/* // about us section........................ */
+.about-us-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  /* // background-image: url(../img/bullet.jpg); */
+  position: relative;
+  /* // .about-cont {
+  //     background-color: #000000;
+  //     box-shadow: $shadow;
+  // } */
+}
+.about-us-section .fp-tableCell {
+  display: table-cell;
+  vertical-align: top;
+  height: 100vh;
+}
+.about-us-section .about-us-title {
+  text-align: center;
+  background-color: #000;
+  position: relative;
+  width: 123px;
+  height: 73vh;
+}
+.about-us-section .about-us-title .about-head {
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  vertical-align: center;
+  font-size: 6rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  text-decoration: transparent;
+  color: #fff;
+}
+.about-us-section .about-desc {
+  justify-content: center;
+  color: #000;
+  position: relative;
+  padding-top: 23%;
+  height: 100%;
+  width: 100%;
+  word-spacing: 5px;
+  margin-left: 45px;
+}
+.about-us-section .about-desc .about-desc-title {
+  font-weight: lighter;
+}
+.about-us-section .about-desc .btn {
+  border-radius: 0;
+  border: 1px solid #000;
+}
+.about-us-section .about-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* // Club Gorkhey ........................... */
+.club-gorkhey {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #000;
+}
+.club-gorkhey .club-img {
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.club-gorkhey .club-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.club-gorkhey .club-desc-sec {
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #fff;
+}
+.club-gorkhey .club-desc-sec .club-head {
+  font-weight: lighter;
+}
+.club-gorkhey .club-desc-sec .btn-outline-light {
+  border-radius: 0;
+}
+.club-gorkhey .club-desc-sec .club-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* // Blog section + Footer .................. */
+.main-blog {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+.main-blog .collections-title {
+  margin-bottom: 5%;
+}
+.main-blog .collection-head {
+  color: black;
+}
+.main-blog .collection-desc {
+  width: 35%;
+  margin: auto;
+}
+.main-blog div.col-4:nth-child(odd) .card {
+  transform: rotate(15deg);
+}
+.main-blog div.col-4:nth-child(even) .card {
+  transform: rotate(-15deg);
+}
+.main-blog .card {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+  border: 17px solid black;
+  border-bottom: 0;
+  margin: 10px 15%;
+  cursor: pointer;
+}
+.main-blog .card .card-body {
+  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.main-blog .card .card-body .card-title {
+  padding-top: 10px;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.main-blog .card .card-img-top {
+  position: relative;
+  height: 380px;
+  object-fit: cover;
+  width: 100%;
+  transition: all 0.3s linear;
+}
+.main-blog .card .read-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 0;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.main-blog .card:hover .card-img-top {
+  transition: all 0.3s linear;
+  filter: brightness(50%);
+}
+.main-blog .card:hover .read-more {
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+.main-blog .space {
+  padding: 10px;
+}
+
+/* .main-blog::before {
+  content: "Blogs";
+  color: #d3d3d3;
+  font-size: 25rem;
+  letter-spacing: 90px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+} */
+.contact-us {
+  position: relative;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  z-index: 1;
+}
+.contact-us .collection-head {
+  margin-bottom: 20px;
+}
+.contact-us .contact-container {
+  padding-top: 8vh;
+  height: 70vh;
+}
+.contact-us .contact-container .fp-tableCell {
+  vertical-align: top;
+  display: unset;
+}
+.contact-us .contact-container space {
+  padding: 20px;
+}
+.contact-us .contact-container .info-main-head {
+  font-weight: lighter;
+}
+.contact-us .contact-container .form-control {
+  border-radius: 0;
+  border: 0;
+  background-color: #ffffff;
+  border-right: 0;
+  border-left: 0;
+}
+.contact-us .contact-container .msg-label {
+  font-size: small;
+}
+.contact-us .contact-container .btn {
+  border-radius: 0;
+  font-size: small;
+}
+.contact-us .contact-container .contact-main-head {
+  text-align: center;
+  font-weight: lighter;
+  color: #fff;
+  margin: 5px 0;
+}
+.contact-us .contact-container .information {
+  line-height: 40px;
+}
+.contact-us .contact-container .info-list-items {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: small;
+}
+.contact-us .contact-container .social-media {
+  position: relative;
+}
+.contact-us .contact-container .social-media .social-icons {
+  height: 100px;
+  width: 100px;
+  letter-spacing: 15px;
+}
+.contact-us .contact-container .form-name {
+  font-size: small;
+}
+
+#footer {
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+  overflow: hidden;
+  border-top: 2px solid #fff;
+  height: 30vh;
+}
+#footer .footer-box {
+  align-items: center;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+#footer .footer-box .footer-nav-head {
+  font-weight: lighter;
+}
+#footer .footer-nav-lists {
+  list-style-type: none;
+  color: #fff;
+  padding-top: 10px;
+}
+#footer .footer-nav-lists .info-lists {
+  font-size: small;
+  list-style-type: none;
+  color: #fff !important;
+}
+#footer .footer-nav-lists .ftNav {
+  color: #fff;
+  font-size: small;
+  text-align: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */
