@@ -246,6 +246,12 @@ body {
   border-radius: 40px;
   float: right;
 }
+.collections .container .details button a {
+  color: white;
+}
+.collections .container .details button a:hover {
+  text-decoration: none;
+}
 
 /* // about us section........................ */
 .about-us-section {
@@ -336,6 +342,10 @@ body {
 }
 .club-gorkhey .club-desc-sec .btn-outline-light {
   border-radius: 0;
+}
+.club-gorkhey .club-desc-sec .btn-outline-light a {
+  text-decoration: none;
+  color: white;
 }
 .club-gorkhey .club-desc-sec .club-desc {
   color: rgba(255, 255, 255, 0.7);

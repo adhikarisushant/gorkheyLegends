@@ -25,9 +25,9 @@ $(document).ready(function () {
     anchors: [
       "hero-section",
       "collections",
-      "about-us",
+      "about-us-section",
       "club-gorkhey",
-      "blogs",
+      "main-blog",
       "contact-us",
     ],
   });

@@ -285,6 +285,14 @@ body {
         font-weight: 600;
         border-radius: 40px;
         float: right;
+
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
       }
     }
   }
@@ -480,6 +488,10 @@ body {
     }
     .btn-outline-light {
       border-radius: 0;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
     .club-desc {
       color: rgba(255, 255, 255, 0.7);
